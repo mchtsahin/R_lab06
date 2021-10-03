@@ -1,5 +1,25 @@
 
 
+#' Brute Force Knapsack
+#'
+#'This algorithm estimates how to put available items into the knapsack
+#'in order to get the maximum possible value less than weight of knapsack.
+#'Here brute force approach is implemented that means all possible
+#' combinations of items O(2^n) are considered.
+#'
+#' @param x Data frame with two numeric columns: weights and values
+#' @param W Total weight of the knapsack
+#' @param parallel logical parameter for parallel computation
+#'
+#' @return
+#' List with numbers of items that can be put into knapsack and maximum obtained value
+#'
+#' @export
+#'
+#'
+#'
+#'
+#'
 brute_force_knapsack<-function(x,W,parallel=FALSE){
 
   if (length(colnames(x))!=2 || !is.numeric(W) || !all(colnames(x)==c("w","v")) || !is.data.frame(x) || !all(x[,'w']>0) || !all(x[,'w']>0) || W<0)  stop("Wrong input")

@@ -19,8 +19,3 @@ This is a dynamic programming (DP) approach to solving knapsack problem.
 Here a tabulation method is used. DP approach results into better performance
 due to O(W*n) gain.
 }
-\examples{
-knapsack_dynamic(x = knapsack_objects[1:8,], W = 3500)
-knapsack_dynamic(x = knapsack_objects[1:12,], W = 2000)
-
-}

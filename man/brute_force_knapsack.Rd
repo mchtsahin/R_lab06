@@ -22,8 +22,3 @@ in order to get the maximum possible value less than weight of knapsack.
 Here brute force approach is implemented that means all possible
 combinations of items O(2^n) are considered.
 }
-\examples{
-brute_force_knapsack(x = knapsack_objects[1:8,], W = 3500)
-brute_force_knapsack(x = knapsack_objects[1:12,], W = 2000)
-
-}

@@ -1,5 +1,23 @@
 
 
+#' Knapsack Dynamic Programming Implementation
+#'
+#' This is a dynamic programming (DP) approach to solving knapsack problem.
+#' Here a tabulation method is used. DP approach results into better performance
+#'due to O(W*n) gain.
+#'
+#' @param x Data frame with two numeric columns: weights and values
+#' @param W Total weight of the knapsack
+#'
+#' @return
+#' List with numbers of items that can be put into knapsack and maximum obtained value
+#'
+#' @export
+#'
+#'
+#'
+#'
+#'
 knapsack_dynamic<-function(x,W){
 
   if (length(colnames(x))!=2 || !is.numeric(W) || !all(colnames(x)==c("w","v")) || !is.data.frame(x) || !all(x[,'w']>0) || !all(x[,'w']>0) || W<0 )  stop("Wrong input")

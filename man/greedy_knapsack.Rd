@@ -12,7 +12,7 @@ greedy_knapsack(x, W)
 \item{W}{Total weight of the knapsack}
 }
 \value{
-List with number of elements that can be put into knapsack and approximate maximum obtained value
+List with numbers of items that can be put into knapsack and approximate maximum obtained value
 }
 \description{
 This is a greedy approach to knapsack problem. Here unit value per weight is calculated for each item.
@@ -20,10 +20,4 @@ After calculating unit per weight, the items with maximum values are selected in
 Total value of all selected items must be below knapsack weight \code{W}.
 This approach does not give an exact value but returns at least 50\% of the true maximum value.
 It reduces computational complexity due to O(n*log n).
-}
-\examples{
-greedy_knapsack(x = knapsack_objects[1:8,], W = 3500)
-greedy_knapsack(x = knapsack_objects[1:12,], W = 2000)
-
-
 }
