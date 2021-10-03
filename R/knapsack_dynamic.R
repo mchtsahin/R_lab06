@@ -2,7 +2,7 @@
 
 knapsack_dynamic<-function(x,W){
 
-  if (length(colnames(x))!=2 || !is.numeric(W) || !all(colnames(x)==c("w","v")) || !is.data.frame(x) || !all(x[,'w']>0) || !all(x[,'w']>0) )  stop("Wrong input")
+  if (length(colnames(x))!=2 || !is.numeric(W) || !all(colnames(x)==c("w","v")) || !is.data.frame(x) || !all(x[,'w']>0) || !all(x[,'w']>0) || W<0 )  stop("Wrong input")
 
 
   v = x[,'v']
