@@ -7,7 +7,7 @@
 #'
 #'@details
 #'
-#'Functions \code{brute_force_knapsack}, \code{greedy_knapsack} and \code{knapsack_dynamic} are included.
+#'Functions \code{brute_force_knapsack()}, \code{greedy_knapsack()} and \code{knapsack_dynamic()} are included.
 #'
 #'
 #'@author
