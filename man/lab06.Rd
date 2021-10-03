@@ -10,7 +10,7 @@ Each function uses different approach and performs with different types of
 computational complexity.
 }
 \details{
-Functions \code{brute_force_knapsack}, \code{greedy_knapsack} and \code{knapsack_dynamic} are included.
+Functions \code{brute_force_knapsack()}, \code{greedy_knapsack()} and \code{knapsack_dynamic()} are included.
 }
 \seealso{
 Useful links:
