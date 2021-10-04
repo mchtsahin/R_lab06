@@ -31,6 +31,23 @@ brute_force_knapsack<-function(x,W,parallel=FALSE){
   bin<-lapply(0:(2^n-1), function(x) head(as.integer(intToBits(x)),n))
 
 
+  if (parallel==TRUE){
+
+
+    cl<-makeCluster(4,"PSOCK")
+
+    clusterExport(cl,"n")
+
+    bin<-parLapply(cl,0:(2^n-1), function(x) head(as.integer(intToBits(x)),n))
+    stopCluster(cl)
+  }
+
+  if (parallel==FALSE){
+
+    bin<-lapply(0:(2^n-1), function(x) head(as.integer(intToBits(x)),n))
+
+  }
+
   bin_df<-t(as.data.frame(bin))
 
   rownames(bin_df)<-NULL
