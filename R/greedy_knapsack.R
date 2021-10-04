@@ -31,11 +31,15 @@ greedy_knapsack<-function(x,W){
   w=x[,'w']
   v=x[,'v']
 
+  #calculate value per weight  for each item
+
   ratio<-v/w
 
   dec_ratio<-ratio[order(ratio,decreasing=TRUE)]
 
   elements<-order(ratio,decreasing=TRUE)
+
+  #put into bag using while loop starting from item with maximum value per weight
 
   bag<-c()
 
@@ -49,6 +53,7 @@ greedy_knapsack<-function(x,W){
     i<-i+1
 
   }
+
 
   answer<-list(value=round(sum(v[elements[1:(i-2)]]), digits=0), elements = elements[1:(i-2)])
 

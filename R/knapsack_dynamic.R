@@ -27,7 +27,11 @@ knapsack_dynamic<-function(x,W){
   w = x[,'w']
   n=length(w)
 
+  #create empty matrix of zeros
+
   kn<-matrix(0,n+1,W+1)
+
+  #use tabulation method to compare weight of iterated item with previous row that does not contain this item
 
   for (i in 2:(n+1)){
 
@@ -43,6 +47,8 @@ knapsack_dynamic<-function(x,W){
       }
     }
   }
+
+  #go backwards to identify selected items
 
   elements<-c()
 
