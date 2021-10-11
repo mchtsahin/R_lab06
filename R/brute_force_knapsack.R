@@ -1,5 +1,3 @@
-
-
 #' Brute Force Knapsack
 #'
 #'This algorithm estimates how to put available items into the knapsack
@@ -13,7 +11,7 @@
 #'
 #' @return
 #' List with numbers of items that can be put into knapsack and maximum obtained value
-#'
+#
 #' @export
 #'
 #'
